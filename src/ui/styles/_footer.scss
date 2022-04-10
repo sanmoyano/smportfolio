@@ -1,0 +1,17 @@
+footer {
+    padding: 1rem;
+    .nav--link {
+        text-decoration: none;
+        color: $sm-white;
+        font-size: 1.6rem;
+        font-weight: 700;
+        padding: 10px;
+        font-family: $sm-titles;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}

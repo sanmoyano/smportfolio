@@ -1,5 +1,11 @@
+import Nav from "../1.Nav/Nav";
+
 const Footer = () => {
-    return <div>Footer</div>;
+    return (
+        <footer>
+            <Nav />
+        </footer>
+    );
 };
 
 export default Footer;

@@ -10,9 +10,15 @@
 
 %sm-hero {
     font-family: $sm-titles;
-    font-size: 16rem;
+    font-size: 14rem;
     font-weight: 700;
     color: $sm-white;
+}
+
+@media screen and (min-width: 1024px) {
+    %sm-hero {
+        font-size: 24rem;
+    }
 }
 
 %sm-hero-tag {
@@ -44,4 +50,15 @@
     font-weight: 700;
     color: $sm-white;
     text-decoration: none;
+}
+
+%sm-nav-link {
+    text-decoration: none;
+    color: $sm-white;
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: 10px;
+    font-family: $sm-titles;
+    cursor: pointer;
+    padding: .5rem 1rem;
 }

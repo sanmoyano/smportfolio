@@ -8,11 +8,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     .hero__container {
-        padding: 2.4rem;
         .hero__logo {
             @extend %sm-hero;
         }
+
         .hero__tagline {
             @extend %sm-hero-tag;
         }

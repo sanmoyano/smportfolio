@@ -2,7 +2,6 @@ import { Route, Routes } from "react-router-dom";
 
 import ItemListContainer from "../containers/ItemListContainer";
 
-import Hero from "./2.Hero/Hero";
 import Projects from "./3.Projects/Projects";
 import Skills from "./4.Skills/Skills";
 import About from "./5.About/About";
@@ -15,7 +14,6 @@ const Main = () => {
                 <Route element={<ItemListContainer />} path="/" />
                 <Route element={<ItemListContainer />} path="/projects" />
             </Routes>
-            <Hero />
             <Projects />
             <Skills />
             <About />

@@ -1,25 +1,28 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
+
+import Nav from "./Nav";
 
 const Header = () => {
+    const [activeTogle, setActiveTogle] = useState(false);
+
+    const handleClick = () => {
+        setActiveTogle(!activeTogle);
+    };
+
     return (
-        <header aria-expanded="false" className="header__layout">
+        <header className="header__layout" id="header__layout">
             <Link className="header__layout--logo" to="/">
                 <h1>#sm</h1>
             </Link>
-            <nav className="header__layout--nav">
-                <Link className="nav--link" to="/projects">
-                    .Projects ( )
-                </Link>
-                <Link className="nav--link" to="/skills">
-                    .Skills ( )
-                </Link>
-                <Link className="nav--link" to="/about">
-                    .About ( )
-                </Link>
-                <Link className="nav--link" to="/contact">
-                    .Contact ( )
-                </Link>
-            </nav>
+            <div className="nav__toggle--icon" onClick={handleClick}>
+                {activeTogle == false ? (
+                    <div aria-controls="toggle__off"> . /</div>
+                ) : (
+                    <div aria-controls="toggle__on">.. /</div>
+                )}
+            </div>
+            <Nav active={activeTogle} />
         </header>
     );
 };

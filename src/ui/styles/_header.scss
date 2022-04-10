@@ -1,0 +1,45 @@
+@import "./utilities/variables";
+@import "./utilities/extend";
+
+.header__layout {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 24px;
+    width: 100%;
+    height: fit-content;
+    background-color: transparent;
+    backdrop-filter: blur(0.7em);
+    z-index: 1000;
+
+    .header__layout--logo {
+        @extend %sm-logo;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    .header__layout--nav {
+        display: flex;
+        justify-content: center;
+
+        .nav--link {
+            text-decoration: none;
+            color: $sm-white;
+            font-size: 1.6rem;
+            font-weight: 700;
+            padding: 10px;
+            font-family: $sm-titles;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+    }
+}

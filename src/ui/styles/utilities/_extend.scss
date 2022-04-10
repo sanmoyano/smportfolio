@@ -1,0 +1,47 @@
+@import"./variables";
+
+%sm-logo {
+    font-family: $sm-titles;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $sm-white;
+    text-decoration: none;
+}
+
+%sm-hero {
+    font-family: $sm-titles;
+    font-size: 16rem;
+    font-weight: 700;
+    color: $sm-white;
+}
+
+%sm-hero-tag {
+    font-family: $sm-text;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: $sm-white-text;
+}
+
+%sm-text {
+    font-family: $sm-text;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: $sm-white-text;
+    text-decoration: none;
+}
+
+%sm-title {
+    font-family: $sm-titles;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $sm-white;
+    text-decoration: none;
+}
+
+%sm-button-skill {
+    font-family: $sm-text;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: $sm-white;
+    text-decoration: none;
+}

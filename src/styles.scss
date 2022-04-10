@@ -1,0 +1,11 @@
+//RESET
+@import "./ui/styles/reset.scss";
+
+//LAYOUT
+@import "./ui/styles/header";
+@import"./ui/styles/hero";
+
+//UTILITIES
+@import "./ui/styles/utilities/extend";
+@import "./ui/styles/utilities/variables";
+

@@ -4,7 +4,7 @@ const Nav = (active) => {
     const cambioDeClase = active;
 
     return (
-        <nav className={cambioDeClase.active == false ? "nav__layout" : "nav__layout--on"}>
+        <nav className={cambioDeClase.active == true ? "nav__layout--on" : "nav__layout"}>
             <Link className="nav--link" to="/projects">
                 .Projects ( )
             </Link>

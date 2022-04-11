@@ -36,17 +36,18 @@
         }
     }
 
-    .nav__toggle--icon {
-        display: none;
-        text-decoration: none;
-        color: $sm-white;
-        font-size: 3rem;
-        font-weight: 700;
-        padding: 10px;
-        font-family: $sm-titles;
-        cursor: pointer;
-        z-index: 1000;
-    }
+}
+
+.nav__toggle--icon {
+    display: none;
+    text-decoration: none;
+    color: $sm-white;
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 10px;
+    font-family: $sm-titles;
+    cursor: pointer;
+
 }
 
 @media screen and (max-width: 768px) {
@@ -60,17 +61,37 @@
         .nav__layout--on {
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: fixed;
-            top: 0px;
-            height: 100vh;
-            width: 100%;
-            background-color: transparent;
-            backdrop-filter: blur(0.7em);
-            opacity: 1;
+            align-items: flex-end;
+            top: 114px;
             left: 0px;
+            height: 100vh;
+            width: 70%;
+
+            .nav--link {
+                text-decoration: none;
+                color: $sm-white;
+                font-size: 1.6rem;
+                font-weight: 700;
+                padding: 10px;
+                font-family: $sm-titles;
+                cursor: pointer;
+                padding: .5rem 1rem;
+            }
         }
+
+        .nav__layout.nav__layout--on {
+            transition: all 0.3s ease-in-out;
+        }
+    }
+
+    .nav__toggle--icon {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 2400px) {
+    .nav__layout--on {
+        display: flex;
 
         .nav--link {
             text-decoration: none;
@@ -81,11 +102,11 @@
             font-family: $sm-titles;
             cursor: pointer;
             padding: .5rem 1rem;
-        }
+            transition: all 0.3s ease-in-out;
 
-        .nav__toggle--icon {
-            display: block;
-
+            &:hover {
+                transform: scale(1.1);
+            }
         }
     }
 }

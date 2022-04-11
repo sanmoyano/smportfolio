@@ -13,10 +13,10 @@ const Header = () => {
     return (
         <header className="header__layout" id="header__layout">
             <Link className="header__layout--logo" to="/">
-                <h1>#sm</h1>
+                {activeTogle === false ? <h1>#sm</h1> : ""}
             </Link>
             <div className="nav__toggle--icon" onClick={handleClick}>
-                {activeTogle == false ? (
+                {activeTogle === false ? (
                     <div aria-controls="toggle__off"> . /</div>
                 ) : (
                     <div aria-controls="toggle__on">.. /</div>

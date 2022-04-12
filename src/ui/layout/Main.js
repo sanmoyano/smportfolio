@@ -1,6 +1,6 @@
-import { Route, Routes } from "react-router-dom";
+// import { Route, Routes } from "react-router-dom";
 
-import ItemListContainer from "../containers/ItemListContainer";
+// import ItemListContainer from "../containers/ItemListContainer";
 
 import Projects from "./3.Projects/Projects";
 import Skills from "./4.Skills/Skills";
@@ -9,11 +9,11 @@ import Contact from "./6.Contact/Contact";
 
 const Main = () => {
     return (
-        <main>
-            <Routes>
+        <main id="main__container">
+            {/* <Routes>
                 <Route element={<ItemListContainer />} path="/" />
                 <Route element={<ItemListContainer />} path="/projects" />
-            </Routes>
+            </Routes> */}
             <Projects />
             <Skills />
             <About />

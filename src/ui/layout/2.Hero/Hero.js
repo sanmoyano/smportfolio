@@ -8,7 +8,7 @@ const Hero = () => {
                 <h2 className="hero__tagline">
                     <Typewriter
                         cursor="true"
-                        cursorStyle="|"
+                        cursorStyle="▌"
                         delaySpeed={1500}
                         typeSpeed={90}
                         words={["Creative front end developer and designer."]}

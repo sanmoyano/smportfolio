@@ -1,0 +1,87 @@
+@import"./utilities/variables";
+@import "./utilities/extend";
+
+#main__container {
+    display: grid;
+    grid-template-columns: 40%;
+    grid-template-rows: auto;
+    justify-content: center;
+    grid-template-areas:
+        "projects"
+        "skills"
+        "about"
+        "contact";
+    grid-gap: 2rem;
+    padding: 2.4rem;
+}
+
+.main__about {
+    @extend %sm-main-display;
+}
+
+.main__skills {
+    @extend %sm-main-display;
+
+    .skills__container {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2.4rem;
+
+        .skills__grid {
+            display: grid;
+            gap: .8rem;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+
+        .skills--colums {
+            display: flex;
+            justify-content: center;
+            gap: .8rem;
+        }
+    }
+
+    .skill--icon {
+        @extend %sm-skill-size;
+        background-color: $sm-gray;
+        @extend %sm-adobe;
+        transition: all 0.3s ease-in-out;
+
+        svg {
+            @extend %sm-skill-logo;
+        }
+
+        &:hover {
+            transform: scale(1.1)
+        }
+    }
+
+    .skill--icon-dos {
+        @extend %sm-skill-size;
+        background-color: $sm-dark-gray;
+        @extend %sm-adobe;
+        transition: all 0.3s ease-in-out;
+
+        svg {
+            @extend %sm-skill-logo;
+        }
+
+        &:hover {
+            transform: scale(1.1)
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #main__container {
+        grid-template-columns: 1fr;
+    }
+
+    .skills__grid {
+        grid-template-rows: none !important;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .skills--colums {
+        flex-direction: column;
+    }
+}

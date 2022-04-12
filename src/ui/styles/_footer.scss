@@ -1,18 +1,41 @@
+@import "./utilities/variables";
+@import "./utilities/extend";
+
 footer {
-    padding: 1rem;
+    padding: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
 
-    .nav--link {
-        text-decoration: none;
-        color: $sm-white;
-        font-size: 1.6rem;
-        font-weight: 700;
-        padding: 10px;
-        font-family: $sm-titles;
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
+    .footer__container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
 
-        &:hover {
-            transform: scale(1.1);
+        .footer--logo {
+            @extend %sm-logo-footer;
+        }
+
+        .footer__social {
+            display: flex;
+            align-items: flex-start;
+            gap: 3rem;
+
+            a {
+                color: $sm-white-text;
+                font-size: 3rem;
+                text-decoration: none;
+            }
         }
     }
+
+    .footer__tagline {
+        font-size: 1.2rem;
+        font-weight: 100;
+        font-family: $sm-text;
+        color: $sm-white-text;
+        margin-top: 1.6rem;
+    }
+
 }

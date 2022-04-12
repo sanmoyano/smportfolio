@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-around;
     align-items: baseline;
-    padding: 24px;
+    padding: 2.4rem;
     width: 100%;
     height: fit-content;
     background-color: transparent;
@@ -62,10 +62,10 @@
             display: flex;
             flex-direction: column;
             align-items: flex-end;
-            top: 114px;
             left: 0px;
             height: 100vh;
             width: 70%;
+            gap: 4rem;
 
             .nav--link {
                 text-decoration: none;

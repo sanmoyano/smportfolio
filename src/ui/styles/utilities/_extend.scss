@@ -8,6 +8,14 @@
     text-decoration: none;
 }
 
+%sm-logo-footer {
+    font-family: $sm-titles;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: $sm-white;
+    text-decoration: none;
+}
+
 %sm-hero {
     font-family: $sm-titles;
     font-size: 14rem;
@@ -26,12 +34,14 @@
     font-size: 1.6rem;
     font-weight: 300;
     color: $sm-white-text;
+    padding: 0 1rem;
+    width: 300px;
 }
 
 %sm-text {
     font-family: $sm-text;
     font-size: 1.6rem;
-    font-weight: 700;
+    font-weight: 100;
     color: $sm-white-text;
     text-decoration: none;
 }
@@ -61,4 +71,42 @@
     font-family: $sm-titles;
     cursor: pointer;
     padding: .5rem 1rem;
+}
+
+%sm-main-display {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        @extend %sm-title;
+        margin-bottom: 1.6rem;
+    }
+
+    p {
+        text-align: justify;
+        @extend %sm-text;
+    }
+}
+
+%sm-skill-size {
+    width: 80px;
+    height: 80px;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%sm-skill-logo {
+    font-size: 5rem;
+    color: $sm-white;
+}
+
+%sm-adobe {
+    p {
+        font-family: $sm-titles;
+        font-size: 4rem;
+        font-weight: 700;
+        color: $sm-white
+    }
 }

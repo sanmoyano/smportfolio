@@ -8,7 +8,7 @@ const About = () => {
                 about the best experience I can offer to the user. <br />
                 <br /> I am currently reinforcing my skills focusing on developing a
                 <strong> MERN Full Stack</strong> profile with the professional objective to
-                develope usefull solutions for the future.
+                develope useful solutions for the future.
             </p>
         </div>
     );

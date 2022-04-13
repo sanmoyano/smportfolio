@@ -6,16 +6,16 @@ const Nav = (active) => {
     return (
         <nav className={cambioDeClase.active == true ? "nav__layout--on" : "nav__layout"}>
             <Link className="nav--link" to="/projects">
-                .Projects ( )
+                .projects ( )
             </Link>
             <Link className="nav--link" to="/skills">
-                .Skills ( )
+                .skills ( )
             </Link>
             <Link className="nav--link" to="/about">
-                .About ( )
+                .about ( )
             </Link>
             <Link className="nav--link" to="/contact">
-                .Contact ( )
+                .contact ( )
             </Link>
         </nav>
     );

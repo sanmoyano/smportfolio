@@ -11,8 +11,12 @@
         "skills"
         "about"
         "contact";
-    grid-gap: 2rem;
+    grid-gap: 8rem;
     padding: 2.4rem;
+}
+
+.main__project {
+    @extend %sm-main-display;
 }
 
 .main__about {
@@ -69,6 +73,10 @@
             transform: scale(1.1)
         }
     }
+}
+
+.main__contact {
+    @extend %sm-main-display;
 }
 
 @media screen and (max-width: 768px) {

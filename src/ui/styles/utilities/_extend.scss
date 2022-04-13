@@ -110,3 +110,13 @@
         color: $sm-white
     }
 }
+
+%sm-form-input {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid $sm-white;
+    border-radius: 3px;
+    font-family: $sm-text;
+    color: $sm-white;
+    padding: 1rem;
+}

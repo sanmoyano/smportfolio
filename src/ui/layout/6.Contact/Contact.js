@@ -1,12 +1,11 @@
+import Form from "./Form";
+
 const Contact = () => {
     return (
-        <div className="main__about">
+        <div className="main__contact">
             <h2>.contact ( )</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi possimus iste
-                reprehenderit quo voluptatum, illum ab ipsa! Deleniti omnis amet repudiandae
-                necessitatibus adipisci tempora, numquam, non similique autem quaerat maxime.
-            </p>
+            <p>So, tell me what it`s about:</p>
+            <Form />
         </div>
     );
 };

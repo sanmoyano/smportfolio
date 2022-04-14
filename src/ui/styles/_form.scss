@@ -34,10 +34,9 @@
 
         .form__btn {
             width: 100px;
-            border: none;
             border-radius: 3px;
-            background-color: $sm-white;
-            color: $sm-negro;
+            border: 1px solid $sm-white;
+            color: $sm-white;
             font-size: 1.6rem;
             font-weight: 700;
             font-family: $sm-text;
@@ -46,10 +45,21 @@
             transition: all .3s ease-in-out;
 
             &:hover {
-                background-color: $sm-dark-gray;
-                border: 1px solid $sm-white;
-                color: $sm-white;
+                background-color: $sm-white;
+                color: $sm-negro;
             }
         }
     }
 }
+
+// div.chakra-alert__title.css-tidvy5 {
+//     padding-bottom: 1rem;
+//     font-size: 1.6rem;
+//     font-family: $sm-text;
+//     font-weight: 700;
+// }
+
+// div.chakra-alert__desc.css-zycdy9 {
+//     font-size: 1.2rem;
+//     font-family: $sm-text;
+// }

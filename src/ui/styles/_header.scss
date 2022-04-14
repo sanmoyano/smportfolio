@@ -11,6 +11,7 @@
     height: fit-content;
     background-color: transparent;
     backdrop-filter: blur(0.7em);
+    z-index: 1000;
 
     .header__layout--logo {
         @extend %sm-logo;

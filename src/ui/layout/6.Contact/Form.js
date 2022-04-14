@@ -1,10 +1,17 @@
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 import { useState } from "react";
+import { Button, useToast } from "@chakra-ui/react";
 
 import { db } from "../../../api/firebase";
 
 const Form = () => {
     const [data, setData] = useState({});
+
+    const toast = useToast({
+        duration: 9000,
+        isClosable: true,
+        position: "top-right",
+    });
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -16,14 +23,34 @@ const Form = () => {
             },
             createdAt: serverTimestamp(),
         };
-        const contactCollection = collection(db, "contactData");
-        const addContactData = addDoc(contactCollection, contactData);
 
-        addContactData.then(() => {
-            alert("Mensaje enviado");
-            e.target.reset();
-        });
-        addContactData.catch((err) => alert(err));
+        if (data.name && data.email && data.message) {
+            const contactCollection = collection(db, "contactData");
+            const addContactData = addDoc(contactCollection, contactData);
+
+            addContactData.then(() => {
+                toast({
+                    title: "Message Sent",
+                    description: "Thank you for contacting me.",
+                    status: "success",
+                });
+                e.target.reset();
+            });
+            addContactData.catch(() =>
+                toast({
+                    title: "Error",
+                    description:
+                        "Something went wrong, please try using direct mail on the footer.",
+                    status: "error",
+                }),
+            );
+        } else {
+            toast({
+                title: "Warning",
+                description: "Complete all the form before sending.",
+                status: "warning",
+            });
+        }
     };
 
     const handleChange = (e) => {
@@ -53,9 +80,18 @@ const Form = () => {
                     placeholder="What's all about?..."
                     onChange={handleChange}
                 />
-                <button className="form__btn" type="submit">
+                <Button
+                    _hover={{ bg: "whitesmoke", color: "#2d2d2d" }}
+                    fontFamily={`"JetBrains Mono", monospace`}
+                    fontSize="1.6rem"
+                    paddingInline={12}
+                    size="lg"
+                    textColor="whitesmoke"
+                    type="submit"
+                    variant="outline"
+                >
                     send
-                </button>
+                </Button>
             </form>
         </div>
     );

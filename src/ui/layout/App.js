@@ -9,7 +9,7 @@ import Footer from "./7.Footer/Footer";
 const App = () => {
     return (
         <BrowserRouter>
-            <ChakraProvider>
+            <ChakraProvider resetCSS>
                 <Header />
                 <Hero />
                 <Main />

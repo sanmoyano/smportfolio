@@ -26,7 +26,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="footer__tagline">
-                <p>Design and developed by Santiago Moyano - 2022</p>
+                <p>2022 - Design and developed by Santiago Moyano.</p>
             </div>
         </footer>
     );

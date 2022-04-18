@@ -1,9 +1,11 @@
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button, useToast, Box } from "@chakra-ui/react";
 import { CheckCircleIcon, WarningIcon } from "@chakra-ui/icons";
 
 import { db } from "../../../api/firebase";
+
+import validateInfo from "./validateInfo";
 
 const Form = () => {
     const [name, setName] = useState("");
@@ -102,6 +104,7 @@ const Form = () => {
                     className="form__input"
                     name="name"
                     placeholder="Your name..."
+                    type="text"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                 />
@@ -109,6 +112,7 @@ const Form = () => {
                     className="form__input"
                     name="email"
                     placeholder="Your email..."
+                    type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                 />
@@ -116,6 +120,7 @@ const Form = () => {
                     className="form__input--about"
                     name="message"
                     placeholder="What's all about?..."
+                    type="text"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                 />

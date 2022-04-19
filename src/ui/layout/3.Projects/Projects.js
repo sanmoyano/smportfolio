@@ -1,12 +1,17 @@
+import ProjectListContainer from "../../containers/ProjectListContainer";
+
 const Projects = () => {
     return (
         <div className="main__project">
             <h2>.projects ( )</h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi possimus iste
-                reprehenderit quo voluptatum, illum ab ipsa! Deleniti omnis amet repudiandae
-                necessitatibus adipisci tempora, numquam, non similique autem quaerat maxime.
+                Part of my job is design and code digital products and web applications from idea to
+                implementation. I see every project as a chance to <i>leave my footprint </i> and
+                explore unique UX/UI solutions for the users.
             </p>
+            <div>
+                <ProjectListContainer />
+            </div>
         </div>
     );
 };

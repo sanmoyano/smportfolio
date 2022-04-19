@@ -18,6 +18,8 @@ const Project = ({ project }) => {
                         </Box>
                     ))}
                 </HStack>
+            </HStack>
+            <HStack>
                 <Button
                     _hover={{ bg: "whitesmoke", color: "#0d0d0d" }}
                     bg="#adff2f"
@@ -30,7 +32,21 @@ const Project = ({ project }) => {
                     variant="solid"
                 >
                     <a href={project.link} rel="noreferrer" target="_blank">
-                        visit
+                        project
+                    </a>
+                </Button>
+                <Button
+                    _hover={{ bg: "whitesmoke", color: "#2d2d2d" }}
+                    fontFamily={`"JetBrains Mono", monospace`}
+                    fontSize="1.6rem"
+                    paddingInline={12}
+                    size="lg"
+                    textColor="whitesmoke"
+                    type="submit"
+                    variant="outline"
+                >
+                    <a href={project.github} rel="noreferrer" target="_blank">
+                        GitHub
                     </a>
                 </Button>
             </HStack>

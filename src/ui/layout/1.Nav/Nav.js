@@ -5,7 +5,7 @@ const Nav = (active) => {
 
     return (
         <nav className={cambioDeClase.active == true ? "nav__layout--on" : "nav__layout"}>
-            <Link className="nav--link" to="/projects">
+            <Link className="nav--link" to="/projects/portfolio">
                 .projects ( )
             </Link>
             <Link className="nav--link" to="/skills">

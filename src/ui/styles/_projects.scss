@@ -1,0 +1,13 @@
+@import"./utilities/variables";
+@import "./utilities/extend";
+
+.project__list {
+    margin-block: 4rem;
+    gap: 2rem;
+}
+
+.project__card {
+    .project__skills {
+        @extend %sm-button-skill;
+    }
+}

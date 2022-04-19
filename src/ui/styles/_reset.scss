@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;300;400;700&family=Roboto:wght@300;400;700&display=swap');
+@import"./utilities/variables";
+@import "./utilities/extend";
 
 * {
     margin: 0px;
@@ -22,8 +24,10 @@ h4,
 h5,
 h6 {
     font-family: 'Roboto', sans-serif;
+    color: $sm-white;
 }
 
 p {
     font-family: 'JetBrains Mono', monospace;
+    color: $sm-white-text;
 }

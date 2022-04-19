@@ -54,12 +54,21 @@
     text-decoration: none;
 }
 
+%sm-subtitle {
+    font-family: $sm-text;
+    font-size: 2rem;
+    font-weight: 500;
+    color: $sm-white;
+    text-decoration: none;
+}
+
+
 %sm-button-skill {
     font-family: $sm-text;
     font-size: 1.6rem;
-    font-weight: 700;
-    color: $sm-white;
-    text-decoration: none;
+    font-weight: 500;
+    color: $sm-white-text;
+    text-align: center;
 }
 
 %sm-nav-link {
@@ -80,6 +89,10 @@
     h2 {
         @extend %sm-title;
         margin-bottom: 1.6rem;
+    }
+
+    h3 {
+        @extend %sm-subtitle;
     }
 
     p {

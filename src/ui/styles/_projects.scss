@@ -7,6 +7,14 @@
 }
 
 .project__card {
+    h3 {
+        @extend %sm-subtitle;
+    }
+
+    p {
+        @extend %sm-text;
+    }
+
     .project__skills {
         @extend %sm-button-skill;
     }

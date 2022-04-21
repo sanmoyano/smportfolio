@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import { collection, getDocs, query, where } from "firebase/firestore";
 import { toast } from "@chakra-ui/react";
 
-import Hero from "../layout/2.Hero/Hero";
 import { db } from "../../api/firebase";
 import ProjectList from "../layout/3.Projects/ProjectList";
 

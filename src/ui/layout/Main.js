@@ -1,5 +1,4 @@
 import { Route, Routes } from "react-router-dom";
-import { Children } from "react";
 
 import ProjectListContainer from "../containers/ProjectListContainer";
 
@@ -13,7 +12,7 @@ const Main = () => {
     return (
         <main id="main__container">
             <Routes>
-                <Route element={<Landing />} path="/" />
+                <Route element={<Landing />} path="*" />
                 <Route
                     element={
                         <>
@@ -37,7 +36,9 @@ const Main = () => {
                         <>
                             <Hero
                                 title={"#me"}
-                                words={"Hey, how are you? This is a litle description about me."}
+                                words={
+                                    "Hey, how are you? My name is Santiago and this is a litle description about me."
+                                }
                             />
                             <About />
                         </>

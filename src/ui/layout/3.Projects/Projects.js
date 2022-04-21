@@ -11,9 +11,9 @@ const Projects = () => {
                 implementation. I see every project as a chance to <i>leave my footprint </i> and
                 explore unique UX/UI solutions for the users.
             </p>
-            <div>
-                <ProjectListContainer />
-            </div>
+            <Routes>
+                <Route element={<ProjectListContainer />} path="/" />
+            </Routes>
         </div>
     );
 };

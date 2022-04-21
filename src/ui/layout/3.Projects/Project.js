@@ -7,7 +7,7 @@ const Project = ({ project }) => {
         <Stack className="project__card" spacing={4}>
             <h3>{project.title}</h3>
             <Box spacing={4}>
-                <Image alt={project.alt} borderRadius="md" src={project.img} />
+                <Image alt={project.alt} borderRadius="md" objectFit="cover" src={project.img} />
                 <Text marginTop={4}>{project.description}</Text>
             </Box>
             <HStack className="project__skills" display="flex" justifyContent={"space-between"}>

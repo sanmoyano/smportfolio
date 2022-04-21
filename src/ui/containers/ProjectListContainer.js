@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { collection, getDocs, query, where } from "firebase/firestore";
 import { toast } from "@chakra-ui/react";
+import { Spinner } from "@chakra-ui/react";
 
 import { db } from "../../api/firebase";
 import ProjectList from "../layout/3.Projects/ProjectList";
@@ -34,7 +35,7 @@ const ProjectListContainer = () => {
     }, [idProject]);
 
     if (loading) {
-        return <div>Loading...</div>;
+        return <Spinner color="whitesmoke" size="xl" />;
     } else {
         return <ProjectList projects={projects} />;
     }

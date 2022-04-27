@@ -85,6 +85,7 @@
 %sm-main-display {
     display: flex;
     flex-direction: column;
+    z-index: 1;
 
     h2 {
         @extend %sm-title;

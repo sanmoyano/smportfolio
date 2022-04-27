@@ -22,7 +22,7 @@ const About = () => {
                 textColor="whitesmoke"
                 type="submit"
                 variant="outline"
-                width={"35%"}
+                width={{ base: "auto", md: "70%" }}
             >
                 <a
                     href="https://firebasestorage.googleapis.com/v0/b/sm-portfolio-4c746.appspot.com/o/CV_ENG_Santiago%20Moyano_2022.pdf?alt=media&token=0b391483-8de0-4a19-8670-a7b272e0dccc"

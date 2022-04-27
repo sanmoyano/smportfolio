@@ -19,13 +19,13 @@ const Project = ({ project }) => {
                     ))}
                 </HStack>
             </HStack>
-            <HStack>
+            <HStack spacing={6}>
                 <Button
                     _hover={{ bg: "whitesmoke", color: "#0d0d0d" }}
                     bg="#adff2f"
                     fontFamily={`"JetBrains Mono", monospace`}
                     fontSize="1.6rem"
-                    paddingInline={12}
+                    paddingInline={10}
                     size="lg"
                     textAlign="center"
                     textColor="#0d0d0d"
@@ -39,7 +39,7 @@ const Project = ({ project }) => {
                     _hover={{ bg: "whitesmoke", color: "#2d2d2d" }}
                     fontFamily={`"JetBrains Mono", monospace`}
                     fontSize="1.6rem"
-                    paddingInline={12}
+                    paddingInline={10}
                     size="lg"
                     textColor="whitesmoke"
                     type="submit"

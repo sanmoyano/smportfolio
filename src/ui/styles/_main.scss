@@ -3,8 +3,9 @@
 
 #main__container {
     display: grid;
-    grid-template-columns: 40%;
+    grid-template-columns: 100%;
     grid-template-rows: auto;
+    flex-direction: column;
     justify-content: center;
     grid-template-areas:
         "projects"
@@ -80,9 +81,9 @@
 }
 
 @media screen and (max-width: 768px) {
-    #main__container {
-        grid-template-columns: 1fr;
-    }
+    // #main__container {
+    //     grid-template-columns: 100%;
+    // }
 
     .skills__grid {
         grid-template-rows: none !important;

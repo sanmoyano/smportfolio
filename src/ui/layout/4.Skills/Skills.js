@@ -13,7 +13,7 @@ import { faTerminal } from "@fortawesome/free-solid-svg-icons";
 
 const Skills = () => {
     return (
-        <div className="main__skills">
+        <div id="skills" className="main__skills">
             <h2>.skills ( )</h2>
             <p>Languages and tools.</p>
             <div className="skills__container">

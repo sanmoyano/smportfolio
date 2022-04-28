@@ -7,7 +7,10 @@ import Contact from "./6.Contact/Contact";
 const Landing = () => {
     return (
         <>
-            <Hero title={"#sm"} words={"Creative front end developer and designer."} />
+            <Hero
+                title={"#sm"}
+                words={"I'm Santiago Moyano, creative front end developer and designer."}
+            />
             <Projects />
             <Skills />
             <About />

@@ -46,6 +46,14 @@
     text-decoration: none;
 }
 
+%sm-description {
+    font-family: $sm-text;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: $sm-negro;
+    display: block;
+}
+
 %sm-title {
     font-family: $sm-titles;
     font-size: 2.5rem;
@@ -56,7 +64,7 @@
 
 %sm-subtitle {
     font-family: $sm-text;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 500;
     color: $sm-white;
     text-decoration: none;
@@ -83,8 +91,14 @@
 }
 
 %sm-main-display {
-    display: flex;
+    display: grid;
+    grid-template-columns: 40%;
+    grid-template-rows: auto;
     flex-direction: column;
+    justify-content: center;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
     z-index: 1;
 
     h2 {
@@ -99,6 +113,12 @@
     p {
         text-align: justify;
         @extend %sm-text;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    %sm-main-display {
+        grid-template-columns: 1fr;
     }
 }
 

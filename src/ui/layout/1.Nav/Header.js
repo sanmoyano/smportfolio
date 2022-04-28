@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from "@chakra-ui/react";
 import { useState } from "react";
 
 import Nav from "./Nav";
@@ -12,7 +12,7 @@ const Header = () => {
 
     return (
         <header className="header__layout" id="header__layout">
-            <Link className="header__layout--logo" to="/">
+            <Link className="header__layout--logo" href="#home">
                 {activeTogle === false ? <h1>#sm</h1> : ""}
             </Link>
             <div className="nav__toggle--icon" onClick={handleClick}>

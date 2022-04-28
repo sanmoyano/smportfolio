@@ -1,21 +1,6 @@
 @import"./utilities/variables";
 @import "./utilities/extend";
 
-.project__list {
-    margin-block: 4rem;
-    gap: 2rem;
-}
-
-.project__card {
-    h3 {
-        @extend %sm-subtitle;
-    }
-
-    p {
-        @extend %sm-text;
-    }
-
-    .project__skills {
-        @extend %sm-button-skill;
-    }
-}
+// .project__title {
+//     font-family: $sm-titles;
+// }

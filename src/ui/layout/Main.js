@@ -11,7 +11,8 @@ import Contact from "./6.Contact/Contact";
 const Main = () => {
     return (
         <main id="main__container">
-            <Routes>
+            <Landing />
+            {/* <Routes>
                 <Route element={<Landing />} path="*" />
                 <Route
                     element={
@@ -57,7 +58,7 @@ const Main = () => {
                     }
                     path="/contact"
                 />
-            </Routes>
+            </Routes> */}
         </main>
     );
 };

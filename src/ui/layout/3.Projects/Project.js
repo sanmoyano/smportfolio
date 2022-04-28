@@ -2,12 +2,21 @@ import { Box, Image, HStack, Stack, Text, Button } from "@chakra-ui/react";
 
 const Project = ({ project }) => {
     const skillsArray = project.skills;
+    const small = "300.jpg";
+    const medium = "768.jpg";
+    const large = "1280.jpg";
 
     return (
         <Stack className="project__card" spacing={4}>
             <h3>{project.title}</h3>
             <Box spacing={4}>
-                <Image alt={project.alt} borderRadius="md" objectFit="cover" src={project.img} />
+                <Image
+                    alt={project.alt}
+                    borderRadius="md"
+                    objectFit="cover"
+                    src={project.img}
+                    srcSet={`${project.img} ${small} 300w, ${project.img} ${medium} 768w, ${project.img} ${large} 1280w`}
+                />
                 <Text marginTop={4}>{project.description}</Text>
             </Box>
             <HStack className="project__skills" display="flex" justifyContent={"space-between"}>

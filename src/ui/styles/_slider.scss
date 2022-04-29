@@ -10,15 +10,13 @@
 .slide {
     transform: scale(.6);
     transition: transform 500ms;
-    opacity: .5;
-    filter: blur(0.7em);
+    opacity: .4;
     height: 600px;
 }
 
 .activeSlide {
     transform: scale(1.1);
     opacity: 1;
-    filter: blur(0);
 
 }
 

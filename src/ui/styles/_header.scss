@@ -68,6 +68,7 @@
             height: 100vh;
             width: 70%;
             gap: 4rem;
+            transition: all 0.3s ease-in-out;
 
             .nav--link {
                 text-decoration: none;

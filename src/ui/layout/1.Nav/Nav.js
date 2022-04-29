@@ -1,10 +1,10 @@
-import { Link } from "@chakra-ui/react";
+import { Link, Slide } from "@chakra-ui/react";
 
 const Nav = (active) => {
     const cambioDeClase = active;
 
     return (
-        <nav className={cambioDeClase.active == true ? "nav__layout--on" : "nav__layout"}>
+        <nav nav className={cambioDeClase.active == true ? "nav__layout--on" : "nav__layout"}>
             <Link className="nav--link" href="#projects">
                 .projects ( )
             </Link>

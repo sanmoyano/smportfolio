@@ -7,6 +7,7 @@ const Project = ({ project }) => {
         <Stack>
             <Box
                 alignItems={"flex-start"}
+                as="div"
                 backgroundImage={project.img}
                 backgroundPosition="center"
                 backgroundSize="cover"
@@ -17,6 +18,7 @@ const Project = ({ project }) => {
                 padding={20}
             >
                 <Text
+                    as={"h3"}
                     bgColor={"#0d0d0d"}
                     color={"#f5f5f5"}
                     fontSize={"3xl"}
@@ -26,7 +28,7 @@ const Project = ({ project }) => {
                 >
                     {project.title}
                 </Text>
-                <Text bgColor={"#f5f5f5"} color={"#0d0d0d"} fontSize={"xl"} mb={2} p={2}>
+                <Text as={"p"} bgColor={"#f5f5f5"} color={"#0d0d0d"} fontSize={"xl"} mb={2} p={2}>
                     {project.description}
                 </Text>
                 <Stack justifyContent={"flex-start"}>
@@ -34,6 +36,7 @@ const Project = ({ project }) => {
                         {skillsArray.map((skill) => (
                             <Text
                                 key={skill}
+                                as={"span"}
                                 bgColor={"#0d0d0d"}
                                 color={"#f5f5f5"}
                                 display={{ base: "none", md: "inline-block" }}
@@ -48,6 +51,7 @@ const Project = ({ project }) => {
                     <Box>
                         <Button
                             _hover={{ bg: "whitesmoke", color: "#0d0d0d" }}
+                            as={"button"}
                             bg="#adff2f"
                             fontFamily={`"JetBrains Mono", monospace`}
                             fontSize="xl"
@@ -63,6 +67,7 @@ const Project = ({ project }) => {
                         </Button>
                         <Button
                             _hover={{ bg: "#2d2d2d", color: "#f5f5f5" }}
+                            as={"button"}
                             fontFamily={`"JetBrains Mono", monospace`}
                             fontSize="xl"
                             ml={2}

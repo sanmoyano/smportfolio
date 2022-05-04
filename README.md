@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+<div align="center">
+  <a href="https://github.com/sanmoyano">
+    <img src=https://firebasestorage.googleapis.com/v0/b/sm-portfolio-4c746.appspot.com/o/%23sm-circle.png?alt=media&token=c53b3df3-0fd5-467f-a976-dc4a7e095572 alt="Logo" width="80" height="80">
+  </a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h3 align="center">#sm</h3>
+  <p align="center"> portfolio
+        <br />
+        <a href="https://github.com/sanmoyano/smportfolio.git"><strong>Docuementacion »</strong></a>
+        <br />
+        <br />
+        <a href="https://smportfolio.vercel.app/">Ver Web »</a>
+    </p>
+</div>
 
-## Available Scripts
+## Sobre el proyecto
+![Screnshot](https://firebasestorage.googleapis.com/v0/b/sm-portfolio-4c746.appspot.com/o/portfolio-min.jpg?alt=media&token=c1ec10bd-f4c3-49ec-8e74-3e438d5ba0b2)
 
-In the project directory, you can run:
+El proyecto se trata del desarrollo de mi portfolio personal. El cual se encuentra en constante desarrollo y actualización.
 
-### `npm start`
+### Realizado en:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [React Js](https://reactjs.org/)
+- La aplicacion web se encuentra deployada en [Vercel](https://vercel.com/).
+- Utiliza base de datos de [Firebase](https://firebase.google.com/) para almacenar los proyectos. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Librerias externas
 
-### `npm test`
+<!-- - **react-router-dom** - para manejar las rutas de la aplicación web y el navegador. [Documentación](https://reacttraining.com/react-router/web/guides/quick-start) -->
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **chakra-ui** - para el desarrollo UI de la aplicación web. [Documentación](https://chakra-ui.com/docs/getting-started)
+- **react-slick** - para el desarrollo de la galeria de proyectos. [Documentación](https://react-slick.neostack.com/docs/api)
 
-### `npm run build`
+### API externa
+- **emailjs** - para el envio de correos. [Documentación](https://www.emailjs.com/docs/client-libraries)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Contacto
+ [![LinkedIn][linkedin-shield]][linkedin-url]
+ [![GitHub][github-shield]][github-url]
+ [![Email][email-shield]][email-url]
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ [linkedin-shield]: https://img.shields.io/badge/LinkedIn-linkedin-url?style=for-the-badge&label=LinkedIn&logo=linkedin&logoColor=white
+[linkedin-url]: https://www.linkedin.com/in/santiago-moyano
+[github-shield]: https://img.shields.io/badge/GitHub-github-url?style=for-the-badge&label=GitHub&logo=github&logoColor=white
+[github-url]:https://github.com/sanmoyano
+[email-shield]: https://img.shields.io/badge/Email-email-url?style=for-the-badge&label=Email&logo=email&logoColor=white
+[email-url]: mailto:smoyano.di@gmail.com

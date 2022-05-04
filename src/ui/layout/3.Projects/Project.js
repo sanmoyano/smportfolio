@@ -21,6 +21,7 @@ const Project = ({ project }) => {
                     as={"h3"}
                     bgColor={"#0d0d0d"}
                     color={"#f5f5f5"}
+                    fontFamily={`"JetBrains Mono", monospace`}
                     fontSize={"3xl"}
                     fontWeight={"400"}
                     marginBottom={2}
@@ -40,8 +41,9 @@ const Project = ({ project }) => {
                                 bgColor={"#0d0d0d"}
                                 color={"#f5f5f5"}
                                 display={{ base: "none", md: "inline-block" }}
+                                fontFamily={`"JetBrains Mono", monospace`}
                                 fontSize={"xl"}
-                                fontWeight={"medium"}
+                                fontWeight={"lighter"}
                                 p={2}
                             >
                                 [{skill}]

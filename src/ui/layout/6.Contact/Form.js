@@ -2,6 +2,7 @@ import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 import { useState, useEffect } from "react";
 import { Button, useToast, Box } from "@chakra-ui/react";
 import { CheckCircleIcon, WarningIcon } from "@chakra-ui/icons";
+import emailjs from "emailjs-com";
 
 import { db } from "../../../api/firebase";
 
@@ -51,6 +52,17 @@ const Form = () => {
             const contactsCollection = collection(db, "newContact");
             const addNewContact = addDoc(contactsCollection, newContact);
 
+            emailjs
+                .sendForm("service_9bl5trb", "template_t1u15ab", e.target, "bL3a-vjPEKsvmk2yQ")
+                .then(
+                    (result) => {
+                        console.log(result.text);
+                    },
+                    (error) => {
+                        console.log(error.text);
+                    },
+                );
+
             addNewContact
                 .then(() => {
                     toast({
@@ -90,7 +102,6 @@ const Form = () => {
                         ),
                     });
                 });
-
             setName("");
             setEmail("");
             setMessage("");

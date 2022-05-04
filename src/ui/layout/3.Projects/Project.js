@@ -63,7 +63,12 @@ const Project = ({ project }) => {
                             textColor="#0d0d0d"
                             variant="solid"
                         >
-                            <Link href={project.link} p={2} rel="noreferrer" target={"_blank"}>
+                            <Link
+                                href={project.link}
+                                p={{ base: "4" }}
+                                rel="noreferrer"
+                                target={"_blank"}
+                            >
                                 project
                             </Link>
                         </Button>
@@ -78,7 +83,12 @@ const Project = ({ project }) => {
                             type="submit"
                             variant="solid"
                         >
-                            <Link href={project.github} p={2} rel="noreferrer" target={"_blank"}>
+                            <Link
+                                href={project.github}
+                                p={{ base: "4" }}
+                                rel="noreferrer"
+                                target={"_blank"}
+                            >
                                 GitHub
                             </Link>
                         </Button>

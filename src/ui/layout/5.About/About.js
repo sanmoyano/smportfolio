@@ -1,4 +1,4 @@
-import { Box, Button } from "@chakra-ui/react";
+import { Box, Button, Link } from "@chakra-ui/react";
 
 const About = () => {
     return (
@@ -24,13 +24,14 @@ const About = () => {
                     type="submit"
                     variant="outline"
                 >
-                    <a
+                    <Link
                         href="https://firebasestorage.googleapis.com/v0/b/sm-portfolio-4c746.appspot.com/o/CV_ENG_Santiago%20Moyano_2022.pdf?alt=media&token=1c70b556-3e34-4d2f-b14f-b9b1469434a2"
+                        p={{ base: "4" }}
                         rel="noreferrer"
                         target="_blank"
                     >
                         Download my summary
-                    </a>
+                    </Link>
                 </Button>
             </Box>
         </div>

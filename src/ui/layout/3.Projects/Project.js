@@ -1,4 +1,4 @@
-import { Box, HStack, Stack, Text, Button } from "@chakra-ui/react";
+import { Box, HStack, Stack, Text, Button, Link } from "@chakra-ui/react";
 
 const Project = ({ project }) => {
     const skillsArray = project.skills;
@@ -63,9 +63,9 @@ const Project = ({ project }) => {
                             textColor="#0d0d0d"
                             variant="solid"
                         >
-                            <a href={project.link} rel="noreferrer" target={"_blank"}>
+                            <Link href={project.link} p={2} rel="noreferrer" target={"_blank"}>
                                 project
-                            </a>
+                            </Link>
                         </Button>
                         <Button
                             _hover={{ bg: "#2d2d2d", color: "#f5f5f5" }}
@@ -78,9 +78,9 @@ const Project = ({ project }) => {
                             type="submit"
                             variant="solid"
                         >
-                            <a href={project.github} rel="noreferrer" target={"_blank"}>
+                            <Link href={project.github} p={2} rel="noreferrer" target={"_blank"}>
                                 GitHub
-                            </a>
+                            </Link>
                         </Button>
                     </Box>
                 </Stack>

@@ -1,4 +1,4 @@
-import { Box, Image, HStack, Stack, Text, Button, VStack } from "@chakra-ui/react";
+import { Box, HStack, Stack, Text, Button } from "@chakra-ui/react";
 
 const Project = ({ project }) => {
     const skillsArray = project.skills;

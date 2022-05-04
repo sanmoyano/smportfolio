@@ -1,4 +1,4 @@
-import { Link, Slide } from "@chakra-ui/react";
+import { Link } from "@chakra-ui/react";
 
 const Nav = (active) => {
     const cambioDeClase = active;

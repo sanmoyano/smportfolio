@@ -1,12 +1,12 @@
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Button, useToast, Box } from "@chakra-ui/react";
 import { CheckCircleIcon, WarningIcon } from "@chakra-ui/icons";
 import emailjs from "emailjs-com";
 
 import { db } from "../../../api/firebase";
 
-import validateInfo from "./validateInfo";
+// import validateInfo from "./validateInfo";
 
 const Form = () => {
     const [name, setName] = useState("");
